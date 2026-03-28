@@ -51,6 +51,14 @@ class _QuizScreenState extends State<QuizScreen> {
           _showFeedback = false;
         });
         await game.continueAfterCorrect();
+        
+        // Check if level is now complete after continueAfterCorrect
+        if (game.quizState == QuizState.levelComplete) {
+          await Future.delayed(const Duration(milliseconds: 500));
+          if (mounted) {
+            context.go('/result/${widget.levelId}');
+          }
+        }
       }
     }
   }
