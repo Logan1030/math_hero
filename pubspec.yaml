@@ -1,0 +1,33 @@
+name: math_hero
+description: "数学小英雄 - 儿童数学学习游戏"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.11.4
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  provider: ^6.1.2
+  go_router: ^14.6.2
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  flutter_tts: ^4.0.2
+  confetti: ^0.7.0
+  audioplayers: ^6.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/audio/
+    - assets/images/stars/
+    - assets/images/castles/
